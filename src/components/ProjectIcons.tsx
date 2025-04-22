@@ -21,7 +21,9 @@ const projectLinks = [
 const ProjectIcons = () => {
   return (
     <div className="bg-[#eff7f7] max-w-[1300px] mx-auto relative overflow-hidden p-6">
-      <h1 className="text-2xl font-semibold mb-6 text-center">More Projects</h1>
+      <h2 className="text-4xl font-bold mb-10 text-[#1a3659] text-center underline">
+        More Projects
+      </h2>{" "}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projectLinks.map((project, index) => (
           <a
