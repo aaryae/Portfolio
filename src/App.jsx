@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import LastPage from "./components/LastPage";
 import Navbar from "./components/Navbar";
@@ -15,6 +16,7 @@ export default function App() {
       <Hero />
       <ProjectIcons />
       <LastPage />
+      <Footer />
     </div>
   );
 }

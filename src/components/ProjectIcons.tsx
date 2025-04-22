@@ -31,7 +31,7 @@ const ProjectIcons = () => {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="relative group "
+            className="relative group border-1 border-black"
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             data-aos-duration="1000"
             data-aos-delay={index * 100}
@@ -39,9 +39,8 @@ const ProjectIcons = () => {
             <img
               src={project.src}
               alt={project.alt}
-              className="w-full object-cover "
+              className="w-full  transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity "></div>
           </a>
         ))}
       </div>

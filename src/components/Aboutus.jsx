@@ -3,7 +3,13 @@ import image from "../constant/image";
 
 const Aboutus = () => {
   return (
-    <div className="bg-[#fbf8ef] min-h-screen w-full flex items-start justify-center px-4 relative overflow-hidden ">
+    <div
+      className="bg-[#fbf8ef] min-h-screen w-full flex items-start justify-center px-4 relative overflow-hidden
+     "
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-delay="300"
+    >
       <img
         src={image.mandala}
         className="absolute  w-[600px] sm:w-[800px] lg:w-[1000px] left-[24px] top-0 -translate-x-1/2 -translate-y-1/2 slowspin "
