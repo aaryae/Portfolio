@@ -10,15 +10,28 @@ const Contactus = () => {
     >
       <img
         src={image.mandala}
-        className="absolute w-[600px] sm:w-[800px] lg:w-[1000px] left-[1000px] top-[900px] -translate-x-1/2 -translate-y-1/2 slowspin pointer-events-none "
+        className="absolute w-[600px] sm:w-[800px] lg:w-[1000px] left-[1000px] top-[900px] -translate-x-1/2 -translate-y-1/2 slowspin pointer-events-none"
         alt="Mandala"
       />
 
       <form
-        action="https://formsubmit.co/aaryaed@gmail.com"
+        action="https://getform.io/f/your-unique-endpoint-id" // 🔁 replace this
         method="POST"
         className="p-8 w-full max-w-md space-y-6 z-10"
       >
+        {/* Hidden fields */}
+        <input type="hidden" name="_gotcha" style={{ display: "none" }} />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New message from Portfolio!"
+        />
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://aaryadangol.com.np/thank-you"
+        />
+
         <h2
           className="text-4xl sm:text-6xl font-bold text-center text-[#1a3659] underline"
           data-aos="fade-up"
