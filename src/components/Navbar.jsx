@@ -15,7 +15,7 @@ export default function Navbar() {
             {["Home", "Projects", "About Me", "Contact Me"].map((item) => {
               const isHome = item === "Home";
               const link = isHome
-                ? "/"
+                ? "#"
                 : `#${item.toLowerCase().replace(" ", "")}`;
 
               return (

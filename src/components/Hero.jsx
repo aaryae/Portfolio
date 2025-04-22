@@ -60,7 +60,8 @@ export default function Hero() {
             data-aos="fade-up"
           >
             The Strength <br />
-            of joy <br />
+            of Curosity
+            <br />
             <span className="text-8xl relative">
               Learning.
               <span className="absolute left-0 p-80 bg-[#306dcf] rounded-full -z-50 opacity-10 animate-float"></span>
@@ -71,17 +72,38 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            The promise of lifelong impact
+            The drive behind every breakthrough
           </h3>
           <p className="text-xl" data-aos="fade-up" data-aos-delay="1000">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            nam excepturi blanditiis maxime beatae rerum nemo eaque distinctio
-            vel iure inventore aspernatur error asperiores doloremque hic
-            praesentium saepe qui. Ab beatae animi aut facere sit?
+            Curiosity drives my journey in tech. I build modern web apps using
+            React, Tailwind, and Spring Boot. Solving real-world problems with
+            clean code and creativity is what I love. Join me as I explore new
+            tools, share ideas, and create something meaningful through
+            technology.
           </p>
-          <button className="py-2 px-9 rounded-lg bg-[#0a0a3b] text-xl text-white my-3">
-            Get Started
-          </button>
+
+          {/* ✨ Cool Button ✨ */}
+          <a
+            href="#projects"
+            className="group inline-flex items-center gap-2 py-2 px-9 rounded-lg bg-[#0a0a3b] text-xl text-white my-3 cursor-pointer relative overflow-hidden"
+          >
+            <span className="z-10">Get Started</span>
+            <svg
+              className="w-5 h-5 transition-transform transform group-hover:translate-x-1 group-hover:scale-110 z-10"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+            {/* Glow overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a3b] via-[#1a3bb9] to-[#0a0a3b] opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg blur-sm"></div>
+          </a>
         </div>
 
         <div className="relative pt-44 flex-1">
@@ -89,7 +111,6 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-duration="500"
             className="rounded-full ml-[100px] scale-110 "
-            // slowspin
             src={image.aarya}
             alt="Portrait"
           />

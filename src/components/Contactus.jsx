@@ -66,7 +66,7 @@ const Contactus = () => {
         data-aos-duration="1300"
       >
         <a
-          href="https://www.linkedin.com/in/aaryaed"
+          href="https://www.linkedin.com/in/aaryae/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-125 transition-transform duration-300"
@@ -74,7 +74,7 @@ const Contactus = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/aaryaed"
+          href="https://github.com/aaryae"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-125 transition-transform duration-300"
@@ -82,7 +82,7 @@ const Contactus = () => {
           <FaGithub />
         </a>
         <a
-          href="https://instagram.com/aaryaed"
+          href="https://instagram.com/aaryae"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-125 transition-transform duration-300"
