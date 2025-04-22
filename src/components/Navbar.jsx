@@ -12,11 +12,18 @@ export default function Navbar() {
         </button>
         <div className="hidden md:flex">
           <ul className="flex gap-7">
-            {["Home", "Projects", "About Us", "Contact Us"].map((item) => (
-              <li key={item} className="font-bold uppercase text-sm">
-                <a href="/items">{item}</a>
-              </li>
-            ))}
+            {["Home", "Projects", "About Me", "Contact Me"].map((item) => {
+              const isHome = item === "Home";
+              const link = isHome
+                ? "/"
+                : `#${item.toLowerCase().replace(" ", "")}`;
+
+              return (
+                <li key={item} className="font-bold uppercase text-sm">
+                  <a href={link}>{item}</a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

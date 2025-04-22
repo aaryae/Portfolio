@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 export default function Sidebar() {
   useEffect(() => {
     const menuToggle = document.getElementById("menu-toggle");
@@ -6,21 +7,28 @@ export default function Sidebar() {
     const mobileMenu = document.getElementById("mobile-menu");
     const overlay = document.getElementById("overlay");
 
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.remove("translate-x-full");
-      overlay.classList.remove("hidden");
+    menuToggle?.addEventListener("click", () => {
+      mobileMenu?.classList.remove("translate-x-full");
+      overlay?.classList.remove("hidden");
     });
 
-    closeMenu.addEventListener("click", () => {
-      mobileMenu.classList.add("translate-x-full");
-      overlay.classList.add("hidden");
+    closeMenu?.addEventListener("click", () => {
+      mobileMenu?.classList.add("translate-x-full");
+      overlay?.classList.add("hidden");
     });
 
-    overlay.addEventListener("click", () => {
-      mobileMenu.classList.add("translate-x-full");
-      overlay.classList.add("hidden");
+    overlay?.addEventListener("click", () => {
+      mobileMenu?.classList.add("translate-x-full");
+      overlay?.classList.add("hidden");
     });
   }, []);
+
+  const navItems = [
+    { label: "Home", href: "/" },
+    { label: "Projects", href: "#projects" },
+    { label: "About Us", href: "#aboutus" },
+    { label: "Contact Us", href: "#contactus" },
+  ];
 
   return (
     <div
@@ -31,9 +39,9 @@ export default function Sidebar() {
         &times;
       </button>
       <ul className="flex flex-col gap-6 mt-10">
-        {["Home", "Projects", "About Us", "Contact Us"].map((item) => (
-          <li key={item}>
-            <a href="#">{item}</a>
+        {navItems.map(({ label, href }) => (
+          <li key={label}>
+            <a href={href}>{label}</a>
           </li>
         ))}
       </ul>
