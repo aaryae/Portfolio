@@ -7,7 +7,7 @@ const Contactus = () => {
     <div className="bg-[#c7d6c7] w-full flex flex-col items-center justify-center px-4 relative overflow-hidden py-16">
       <img
         src={image.mandala}
-        className="absolute w-[600px] sm:w-[800px] lg:w-[1000px] left-[1000px] top-[900px] -translate-x-1/2 -translate-y-1/2 slowspin pointer-events-none opacity-30"
+        className="absolute w-[600px] sm:w-[800px] lg:w-[1000px] left-[1000px] top-[900px] -translate-x-1/2 -translate-y-1/2 slowspin pointer-events-none "
         alt="Mandala"
       />
 
