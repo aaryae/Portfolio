@@ -32,12 +32,16 @@ const Projects = () => {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-1/3 p-6 transition-transform duration-300 hover:scale-105 border border-black md:hover:brightness-110 rounded-xl"
+            className="w-full md:w-1/3 p-6 transition-transform duration-300 hover:scale-105 border border-black md:hover:brightness-110 "
             style={{
               backgroundColor: project.color,
             }}
           >
-            <img src={image.crown} className="w-10 tilt-animation absolute " alt="" />
+            <img
+              src={image.crown}
+              className="w-10 tilt-animation absolute "
+              alt=""
+            />
             <h3 className="text-2xl font-semibold  text-[#1a3659] mb-4">
               {project.title}
             </h3>

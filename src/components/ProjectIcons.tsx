@@ -24,14 +24,14 @@ const ProjectIcons = () => {
       <h2 className="text-4xl font-bold mb-10 text-[#1a3659] text-center underline">
         More Projects
       </h2>{" "}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-20">
         {projectLinks.map((project, index) => (
           <a
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="relative group"
+            className="relative group "
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             data-aos-duration="1000"
             data-aos-delay={index * 100}
