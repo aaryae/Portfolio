@@ -6,15 +6,9 @@ export default function Navbar() {
       <div className="max-w-[1500px] mx-auto w-full flex gap-8 items-center justify-between py-4 px-5">
         <h1 className="text-6xl uppercase cursor-pointer text-black font-bold relative">
           AARYA
-          {/* <img
-            src={mandala}
-            className="absolute top-0 slowspin -z-10"
-            width={300}
-            alt=""
-          /> */}
         </h1>
         <button id="menu-toggle" className="md:hidden text-2xl">
-          &#9776;import mandala from "../assets/mandala.png";
+          &#9776;
         </button>
         <div className="hidden md:flex">
           <ul className="flex gap-7">

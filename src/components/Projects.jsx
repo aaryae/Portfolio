@@ -1,5 +1,5 @@
 import React from "react";
-import crown from "../assets/crown.png";
+import image from "../constant/image";
 
 const Projects = () => {
   const projectData = [
@@ -37,7 +37,7 @@ const Projects = () => {
               backgroundColor: project.color,
             }}
           >
-            <img src={crown} className="w-10 tilt-animation absolute " alt="" />
+            <img src={image.crown} className="w-10 tilt-animation absolute " alt="" />
             <h3 className="text-2xl font-semibold  text-[#1a3659] mb-4">
               {project.title}
             </h3>

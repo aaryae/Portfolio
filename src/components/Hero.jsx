@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/aarya1.jpg";
+import image from "../constant/image";
 import "../index.css";
 import InfoCards from "./InfoCards";
 
@@ -54,8 +54,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="max-w-[1500px] mx-auto mb-10 px-5 text-[#1a3659] flex flex-col md:flex-row relative z-10">
-        <div className="pt-60 flex-1 ">
-          <h1 className="text-7xl font-extrabold " data-aos="fade-up">
+        <div className="md:pt-60 pt-36 flex-1 ">
+          <h1
+            className="md:text-7xl text-3xl font-extrabold "
+            data-aos="fade-up"
+          >
             The Strength <br />
             of joy <br />
             <span className="text-8xl relative">
@@ -87,7 +90,7 @@ export default function Hero() {
             data-aos-duration="500"
             className="rounded-full ml-[100px] scale-110 "
             // slowspin
-            src={image}
+            src={image.aarya}
             alt="Portrait"
           />
         </div>

@@ -31,14 +31,7 @@ export default function Sidebar() {
         &times;
       </button>
       <ul className="flex flex-col gap-6 mt-10">
-        {[
-          "Home",
-          "Courses",
-          "Locations",
-          "Our Partners",
-          "About Us",
-          "Contact Us",
-        ].map((item) => (
+        {["Home", "Projects", "About Us", "Contact Us"].map((item) => (
           <li key={item}>
             <a href="#">{item}</a>
           </li>
