@@ -32,7 +32,7 @@ const Projects = () => {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-1/3 p-6 transition-transform duration-300 hover:scale-105 border border-black md:hover:brightness-110 "
+            className="w-full md:w-1/3 p-6 transition-transform duration-300 hover:scale-105 border border-black md:hover:brightness-110 rounded-2xl "
             style={{
               backgroundColor: project.color,
             }}

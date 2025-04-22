@@ -23,7 +23,7 @@ const ProjectIcons = () => {
     <div className="bg-[#eff7f7] max-w-[1300px] mx-auto relative overflow-hidden p-6">
       <h2 className="text-4xl font-bold mb-10 text-[#1a3659] text-center underline">
         More Projects
-      </h2>{" "}
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-20">
         {projectLinks.map((project, index) => (
           <a
@@ -31,7 +31,7 @@ const ProjectIcons = () => {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="relative group border-1 border-black"
+            className="relative group overflow-hidden border border-black"
             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             data-aos-duration="1000"
             data-aos-delay={index * 100}
@@ -39,8 +39,14 @@ const ProjectIcons = () => {
             <img
               src={project.src}
               alt={project.alt}
-              className="w-full  transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover"
             />
+            {/* Overlay */}
+            <div className="absolute inset-0 hover:bg-[#00000062] bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <span className="text-white text-2xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity underline">
+                visit the site
+              </span>
+            </div>
           </a>
         ))}
       </div>

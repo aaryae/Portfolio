@@ -53,7 +53,7 @@ export default function Hero() {
       </svg>
 
       {/* Content */}
-      <div className="max-w-[1500px] mx-auto mb-10 px-5 text-[#1a3659] flex flex-col md:flex-row relative z-10">
+      <div className="max-w-[1500px] mx-auto mb-10 px-5 text-[#1a3659] flex flex-col md:flex-row relative z-10 ">
         <div className="md:pt-60 pt-36 flex-1 ">
           <h1
             className="md:text-7xl text-3xl font-extrabold "
