@@ -26,3 +26,19 @@
 .slowspin {
   animation: slowspin 120s linear infinite;
 }
+
+@keyframes tilt330 {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-50deg);
+  }
+}
+
+.tilt-animation {
+  animation: tilt330 4s ease-in infinite;
+}
