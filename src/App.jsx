@@ -1,17 +1,18 @@
 import React from "react";
 import Hero from "./components/Hero";
-import Infocards from "./components/InfoCards";
 import Navbar from "./components/Navbar";
 import Overlay from "./components/Overlay";
+import ProjectIcons from "./components/ProjectIcons";
 import Sidebar from "./components/Sidebar";
 
 export default function App() {
   return (
-    <div className="bg-[#f4f9ff]">
+    <div className="bg-[#eff7f7]">
       <Navbar />
       <Sidebar />
       <Overlay />
       <Hero />
+      <ProjectIcons />
     </div>
   );
 }

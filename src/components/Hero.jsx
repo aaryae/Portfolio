@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/mandala.png";
+import image from "../assets/aarya1.jpg";
 import "../index.css";
 import InfoCards from "./InfoCards";
 
@@ -31,10 +31,10 @@ export default function Hero() {
 
       {/* Bottom Left SVG */}
       <svg
-        className="absolute bottom-0 left-0"
+        className="absolute bottom-0 left-0 "
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 538 586"
-        height="286"
+        height="386"
         width="538"
         aria-hidden="true"
       >
@@ -54,13 +54,13 @@ export default function Hero() {
 
       {/* Content */}
       <div className="max-w-[1500px] mx-auto mb-10 px-5 text-[#1a3659] flex flex-col md:flex-row relative z-10">
-        <div className="pt-52 flex-1">
+        <div className="pt-60 flex-1 ">
           <h1 className="text-7xl font-extrabold " data-aos="fade-up">
             The Strength <br />
             of joy <br />
             <span className="text-8xl relative">
               Learning.
-              <span className="absolute left-0 p-80 bg-orange-400 rounded-full -z-20 opacity-10 animate-float"></span>
+              <span className="absolute left-0 p-80 bg-[#306dcf] rounded-full -z-50 opacity-10 animate-float"></span>
             </span>
           </h1>
           <h3
@@ -85,7 +85,8 @@ export default function Hero() {
           <img
             data-aos="fade-up"
             data-aos-duration="500"
-            className="rounded-full ml-[100px] scale-120 slowspin"
+            className="rounded-full ml-[100px] scale-110 "
+            // slowspin
             src={image}
             alt="Portrait"
           />
