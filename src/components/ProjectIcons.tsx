@@ -4,17 +4,17 @@ import image from "../constant/image";
 const projectLinks = [
   { src: image.eco, alt: "Eco", link: "https://eco.aaryadangol.com.np" },
   { src: image.news, alt: "News", link: "https://news.aaryadangol.com.np" },
-  { src: image.food, alt: "Food", link: "https://food.aaryandangol.com.np" },
-  { src: image.site, alt: "Site", link: "https://site.aaryandangol.com.np" },
+  { src: image.food, alt: "Food", link: "https://food.aaryadangol.com.np" },
+  { src: image.site, alt: "Site", link: "https://site.aaryadangol.com.np" },
   {
     src: image.saloon,
     alt: "Saloon",
-    link: "https://saloon.aaryandangol.com.np",
+    link: "https://saloon.aaryadangol.com.np",
   },
   {
     src: image.weather,
     alt: "Weather",
-    link: "https://weather.aaryandangol.com.np",
+    link: "https://weather.aaryadangol.com.np",
   },
 ];
 
