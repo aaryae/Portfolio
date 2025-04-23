@@ -62,7 +62,7 @@ export default function Hero() {
             The Strength <br />
             of Curosity
             <br />
-            <span className="text-8xl relative">
+            <span className="md:text-8xl text-2xl relative">
               Learning.
               <span className="absolute left-0 p-80 bg-[#306dcf] rounded-full -z-50 opacity-10 animate-float"></span>
             </span>
