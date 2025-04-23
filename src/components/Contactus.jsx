@@ -95,7 +95,7 @@ const Contactus = () => {
           <FaGithub />
         </a>
         <a
-          href="https://instagram.com/aaryae"
+          href="https://instagram.com/aaryae_"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-125 transition-transform duration-300"
