@@ -46,3 +46,18 @@
 .tilt-animation {
   animation: tilt330 4s ease-in infinite;
 }
+
+@keyframes gradient-slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  animation: gradient-slide 3s ease infinite alternate;
+}

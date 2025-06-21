@@ -1,4 +1,3 @@
-import React from "react";
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import image from "../constant/image";
 
@@ -10,14 +9,49 @@ const Contactus = () => {
     >
       <img
         src={image.mandala}
-        className="absolute w-[600px] sm:w-[800px] lg:w-[1000px] left-[1000px] top-[900px] -translate-x-1/2 -translate-y-1/2 slowspin pointer-events-none"
+        className="absolute w-[800px] right-[-400px] bottom-[-400px] slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] left-[0] bottom-[-400px] slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] right-[500px] bottom-[400px] slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] right-[1500px] bottom-0 slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] right-[1500px] bottom-[400px] slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] right-0 bottom-[-1400px] slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] right-[700px] bottom-[700px] slowspin pointer-events-none opacity-10"
+        alt="Mandala"
+      />
+      <img
+        src={image.mandala}
+        className="absolute w-[800px] left-[1500px] bottom-50 slowspin pointer-events-none opacity-10"
         alt="Mandala"
       />
 
       <form
-        action="https://getform.io/f/your-unique-endpoint-id" // 🔁 replace this
+        action="https://getform.io/f/your-unique-endpoint-id"
         method="POST"
-        className="p-8 w-full max-w-md space-y-6 z-10"
+        className="p-8 w-full max-w-2xl space-y-6 z-10 bg-white rounded-xl shadow-md"
       >
         {/* Hidden fields */}
         <input type="hidden" name="_gotcha" style={{ display: "none" }} />
@@ -33,7 +67,7 @@ const Contactus = () => {
         />
 
         <h2
-          className="text-4xl sm:text-6xl font-bold text-center text-[#1a3659] underline"
+          className="text-5xl sm:text-5xl font-extrabold text-center text-[#1a3659] underline"
           data-aos="fade-up"
           data-aos-duration="800"
         >
@@ -41,23 +75,27 @@ const Contactus = () => {
         </h2>
 
         <div data-aos="fade-up" data-aos-duration="900">
-          <label className="block text-gray-700 mb-1">Your Name</label>
+          <label className="block text-gray-700 mb-2 text-lg font-medium">
+            Your Name
+          </label>
           <input
             type="text"
             name="name"
             required
-            className="w-full bg-white outline-none border border-gray-300 p-3 rounded"
+            className="w-full bg-gray-50 outline-none border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-[#1a3659]"
             placeholder="Enter your name"
           />
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000">
-          <label className="block text-gray-700 mb-1">Message</label>
+          <label className="block text-gray-700 mb-2 text-lg font-medium">
+            Message
+          </label>
           <textarea
             name="message"
             required
-            rows="4"
-            className="w-full bg-white outline-none border border-gray-300 p-3 rounded"
+            rows="5"
+            className="w-full bg-gray-50 outline-none border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-[#1a3659]"
             placeholder="Enter your message"
           ></textarea>
         </div>
@@ -66,7 +104,7 @@ const Contactus = () => {
           type="submit"
           data-aos="fade-up"
           data-aos-duration="1100"
-          className="w-full bg-[#1a3659] text-white py-3 rounded hover:bg-[#0f2545] transition-all"
+          className="w-full bg-[#1a3659] text-white py-4 rounded-lg text-lg hover:bg-[#0f2545] transition-all"
         >
           Send Message
         </button>

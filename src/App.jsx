@@ -1,7 +1,7 @@
-import React from "react";
+import Aboutus from "./components/Aboutus";
+import Contactus from "./components/Contactus";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import LastPage from "./components/LastPage";
 import Navbar from "./components/Navbar";
 import Overlay from "./components/Overlay";
 import ProjectIcons from "./components/ProjectIcons";
@@ -14,8 +14,10 @@ export default function App() {
       <Sidebar />
       <Overlay />
       <Hero />
+      {/* <LastPage /> */}
+      <Aboutus />
       <ProjectIcons />
-      <LastPage />
+      <Contactus />
       <Footer />
     </div>
   );

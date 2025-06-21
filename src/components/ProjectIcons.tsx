@@ -1,10 +1,9 @@
-import React from "react";
 import image from "../constant/image";
 
 const projectLinks = [
   { src: image.eco, alt: "Eco", link: "https://eco.aaryadangol.com.np" },
   { src: image.news, alt: "News", link: "https://news.aaryadangol.com.np" },
-  { src: image.food, alt: "Food", link: "https://food.aaryadangol.com.np" },
+  { src: image.food, alt: "Food", link: "https://recipe.aaryadangol.com.np" },
   { src: image.site, alt: "Site", link: "https://site.aaryadangol.com.np" },
   {
     src: image.saloon,
@@ -21,7 +20,7 @@ const projectLinks = [
 const ProjectIcons = () => {
   return (
     <div className="bg-[#eff7f7] max-w-[1300px] mx-auto relative overflow-hidden p-6">
-      <h2 className="text-4xl font-bold mb-10 text-[#1a3659] text-center underline">
+      <h2 className="text-5xl font-extrabold mb-10 text-[#1a3659] text-center underline">
         More Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-20">
