@@ -6,16 +6,19 @@ const Projects = () => {
       title: "Eco Project",
       url: "https://eco.aaryadangol.com.np",
       background: "linear-gradient(to right, #91a2e3 10%, #3f3a60 90%)",
+      intro: "ECommerce website created with tailwind and typescript"
     },
     {
       title: "Weather App",
       url: "https://weather.aaryadangol.com.np",
       background: "linear-gradient(to right, #3f3a60 20%, #1e1b3a 80%)",
+      intro: "A website that shows weather of different parts of countries"
     },
     {
       title: "News App",
       url: "https://news.aaryadangol.com.np",
       background: "linear-gradient(to right, #1e1b3a 30%, #0a0a3b 100%)",
+      intro:"External Api fetched news portal"
     },
   ];
 
@@ -43,8 +46,7 @@ const Projects = () => {
               {project.title}
             </h3>
             <p className="mb-4 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              voluptate odit illum esse
+              {intro}
             </p>
             <div className="flex items-center justify-center w-full rounded-full bg-transparent">
               <span className="text-xl rounded-full p-1 bg-transparent ">
