@@ -1,6 +1,6 @@
 import image from "../constant/image";
 
-const Aboutus = () => {
+const AboutUs = () => {
   return (
     <div
       className="bg-[#eff7f7]  w-full flex items-start justify-center px-4 relative overflow-hidden py-5
@@ -8,7 +8,7 @@ const Aboutus = () => {
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-delay="300"
-      id="aboutme"
+      id="aboutMe"
     >
       <img
         src={image.mandala}
@@ -61,4 +61,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default AboutUs;

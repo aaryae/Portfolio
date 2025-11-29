@@ -46,7 +46,7 @@ const Projects = () => {
               {project.title}
             </h3>
             <p className="mb-4 ">
-              {intro}
+              {project.intro}
             </p>
             <div className="flex items-center justify-center w-full rounded-full bg-transparent">
               <span className="text-xl rounded-full p-1 bg-transparent ">

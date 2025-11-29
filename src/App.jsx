@@ -1,5 +1,6 @@
-import Aboutus from "./components/Aboutus";
-import Contactus from "./components/Contactus";
+
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -15,9 +16,9 @@ export default function App() {
       <Overlay />
       <Hero />
       {/* <LastPage /> */}
-      <Aboutus />
+      <AboutUs/>
       <ProjectIcons />
-      <Contactus />
+      <ContactUs/>
       <Footer />
     </div>
   );

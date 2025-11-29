@@ -1,11 +1,11 @@
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import image from "../constant/image";
 
-const Contactus = () => {
+const ContactUs = () => {
   return (
     <div
       className="bg-[#c7d6c7] w-full flex flex-col items-center justify-center px-4 relative overflow-hidden py-16"
-      id="contactme"
+      id="contactMe"
     >
       <img
         src={image.mandala}
@@ -151,4 +151,4 @@ const Contactus = () => {
   );
 };
 
-export default Contactus;
+export default ContactUs;
