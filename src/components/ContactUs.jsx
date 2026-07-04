@@ -67,18 +67,21 @@ const ContactUs = () => {
             </a>
 
             <div className="flex gap-3">
-              {socialLinks.map(({ href, icon: Icon, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target={href.startsWith("mailto") ? undefined : "_blank"}
-                  rel={href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-                  aria-label={label}
-                  className="w-12 h-12 rounded-full border-2 border-[#1a3659]/15 flex items-center justify-center text-[#1a3659] hover:bg-[#0a0a3b] hover:text-white hover:border-[#0a0a3b] transition-all duration-300 hover:scale-110"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              {socialLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target={link.href.startsWith("mailto") ? undefined : "_blank"}
+                    rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+                    aria-label={link.label}
+                    className="w-12 h-12 rounded-full border-2 border-[#1a3659]/15 flex items-center justify-center text-[#1a3659] hover:bg-[#0a0a3b] hover:text-white hover:border-[#0a0a3b] transition-all duration-300 hover:scale-110"
+                  >
+                    <Icon className="w-5 h-5" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
