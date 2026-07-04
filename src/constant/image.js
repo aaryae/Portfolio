@@ -3,6 +3,7 @@ import crown from "../assets/crown.png";
 import eco from "../assets/eco.png";
 import food from "../assets/food.png";
 import mandala from "../assets/mandala.png";
+import mudita from "../assets/mudita.png";
 import news from "../assets/news.png";
 import saloon from "../assets/saloon.png";
 import site from "../assets/site.png";
@@ -18,6 +19,7 @@ const image = {
   crown,
   food,
   eco,
+  mudita,
 };
 
 export default image;
