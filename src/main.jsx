@@ -3,11 +3,9 @@ import "aos/dist/aos.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { startAnimatedFavicon } from "./utils/animatedFavicon";
 import "./index.css";
 
 AOS.init();
-startAnimatedFavicon();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
