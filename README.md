@@ -21,6 +21,13 @@ note's Restart button, the Start menu's Restart, `switch to windows` in the Linu
 
 Direct links: `?os=windows`, `?os=linux`, `?os=choose` for the boot picker.
 
+## On a phone
+
+Windows and dock and shell all need room, so below 880px the desktop is never mounted. Phones and
+small tablets get `src/mobile/MobileSite.jsx` instead: one scrollable page with the intro, stats,
+stack, every project linked to its live site or repo, and the contact links. `?view=desktop` forces
+the operating system onto a small screen anyway.
+
 ## Run it
 
 ```bash

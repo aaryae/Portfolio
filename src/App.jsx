@@ -1,10 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Boot from "./components/Boot";
 import BootSelect from "./components/BootSelect";
 import Desktop from "./components/Desktop";
+import { useIsMobile } from "./hooks/useIsMobile";
+import MobileSite from "./mobile/MobileSite";
 import { useOS } from "./store/useOS";
 
 export default function App() {
+  const isMobile = useIsMobile();
+  const [forcedDesktop] = useState(
+    () => new URLSearchParams(window.location.search).get("view") === "desktop",
+  );
+  const showMobile = isMobile && !forcedDesktop;
   const phase = useOS((s) => s.phase);
   const platform = useOS((s) => s.platform);
   const openApp = useOS((s) => s.openApp);
@@ -16,16 +23,20 @@ export default function App() {
   const setPhase = useOS((s) => s.setPhase);
 
   useEffect(() => {
-    document.documentElement.dataset.platform = platform;
-  }, [platform]);
+    const root = document.documentElement;
+    root.dataset.view = showMobile ? "mobile" : "desktop";
+    if (showMobile) delete root.dataset.platform;
+    else root.dataset.platform = platform;
+  }, [platform, showMobile]);
 
   useEffect(() => {
+    if (showMobile) return;
     const requested =
       new URLSearchParams(window.location.search).get("os") ??
       window.location.hash.replace("#", "");
     if (requested === "windows" || requested === "linux") bootInto(requested);
     else if (requested === "choose") setPhase("chooser");
-  }, [bootInto, setPhase]);
+  }, [bootInto, setPhase, showMobile]);
 
   useEffect(() => {
     if (phase !== "desktop") return undefined;
@@ -62,6 +73,8 @@ export default function App() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [closeLauncher, closeMenu, openApp, phase, platform, setWorkspace, toggleLauncher]);
+
+  if (showMobile) return <MobileSite />;
 
   return (
     <div className="h-full w-full">

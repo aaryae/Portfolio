@@ -57,6 +57,19 @@ body,
   -webkit-font-smoothing: antialiased;
 }
 
+/* The desktop pins the viewport; the mobile page is a document that scrolls. */
+html[data-view="mobile"],
+html[data-view="mobile"] body,
+html[data-view="mobile"] #root {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
 * {
   box-sizing: border-box;
 }
